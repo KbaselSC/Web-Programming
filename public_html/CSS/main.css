@@ -20,11 +20,16 @@ and open the template in the editor.
 }
 #name{
     width: 312px;
+    margin-top: 10px;
 }
 #color{
     width: 312px;
+    margin-top: 10px;
 }
 .env{
     height: 50px;
     width: 50px;
+}
+#subInv{
+    margin-top: 10px;
 }
