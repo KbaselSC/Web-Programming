@@ -10,15 +10,21 @@ and open the template in the editor.
 
 #cardCanvas{
     background-color: paleturquoise;
-    border: 2px solid black;
-    
+    border: 3px solid black;
 }
 .formCont{
     width: 320px;
     height: 480px;
     background: paleturquoise;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 #name{
-   
+    width: 312px;
+}
+#color{
+    width: 312px;
+}
+.env{
+    height: 50px;
+    width: 50px;
 }
