@@ -14,10 +14,21 @@ and open the template in the editor.
     <body>
         <div class="formCont">
             <h2>Invitation to raid!</h2>
-            <form>
+            <img class="env" src="Images/envelope.png">
+            <img class="env" src="Images/envelope.png">
+            <img class="env" src="Images/envelope.png">
+            <br>
+            <form class="formEdit">
                 <label for="name">Name: </label>
                 <br>
                 <input id="name" autofocus required placeholder="Name" name="name" type="text">
+                <br>
+                <br>
+                <label for="color">Text color: </label>
+                <br>
+                <input name="color" required id="color" type="color">
+                <br>
+                <button id="generateInv">Generate Invite</button>
             </form>
         </div>
         <canvas id="cardCanvas" width="320" height="480" style="display: none"></canvas>
