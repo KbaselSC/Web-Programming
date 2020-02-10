@@ -4,16 +4,22 @@
  * and open the template in the editor.
  */
 
-var name = document.getElementById("name").value;
-var color = document.getElementById("color").value;
 var cardCanvas = document.getElementById("cardCanvas");
 var subInv = document.getElementById("subInv");
-var formCont = document.getElementByClass("formCont");
+var formCont = document.getElementById("formCont");
 
 subInv.addEventListener("click", submitInv);
 
 function submitInv(){
     formCont.style.display="none";
-    //function
     cardCanvas.style.display="block";
+    invText();
+}
+function invText(){
+    var ctx = cardCanvas.getContext("2d");
+    var name = document.getElementById("name").value;
+    var color = document.getElementById("color").value;
+    ctx.fillStyle=color;
+    ctx.font="20px Arial";
+    ctx.fillText(name + " Has been invited to raid!", 20, 460);
 }
