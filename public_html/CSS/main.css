@@ -11,12 +11,14 @@ and open the template in the editor.
 #cardCanvas{
     background-color: paleturquoise;
     border: 3px solid black;
+    display: none;
 }
-.formCont{
+#formCont{
     width: 320px;
     height: 480px;
     background: paleturquoise;
     border: 3px solid black;
+    display: block;
 }
 #name{
     width: 312px;
