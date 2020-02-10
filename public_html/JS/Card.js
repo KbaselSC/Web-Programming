@@ -7,6 +7,11 @@
 var cardCanvas = document.getElementById("cardCanvas");
 var subInv = document.getElementById("subInv");
 var formCont = document.getElementById("formCont");
+var ctx = cardCanvas.getContext("2d");
+var name = document.getElementById("name").value;
+var color = document.getElementById("color").value;
+var corr = document.getElementById("corruption").value;
+
 
 subInv.addEventListener("click", submitInv);
 
@@ -16,10 +21,13 @@ function submitInv(){
     invText();
 }
 function invText(){
-    var ctx = cardCanvas.getContext("2d");
-    var name = document.getElementById("name").value;
-    var color = document.getElementById("color").value;
     ctx.fillStyle=color;
     ctx.font="20px Arial";
-    ctx.fillText(name + " Has been invited to raid!", 20, 460);
+    invBg = new Image();
+    invBg.src = "Images/raid envelope.png";
+    invBg.onload =() =>{
+        ctx.drawImage(invBg, 0, 0, 200, 200);
+    };
+    ctx.fillText(name + " has " + corr + " Corruption", 10, 420);
+    ctx.fillText("And has been invited to raid!",10, 450);
 }
