@@ -11,7 +11,7 @@ and open the template in the editor.
 #cardCanvas{
     background-color: paleturquoise;
     border: 3px solid black;
-    display: none;
+    opacity: 0;
 }
 #formCont{
     width: 320px;
