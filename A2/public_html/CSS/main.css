@@ -1,0 +1,32 @@
+/*
+Author: Kevin Basel
+style sheet for all the ids and classes used in the html file.
+*/
+
+#cardCanvas{
+    background-color: paleturquoise;
+    border: 3px solid black;
+    opacity: 0;
+}
+#formCont{
+    width: 320px;
+    height: 480px;
+    background: paleturquoise;
+    border: 3px solid black;
+    display: block;
+}
+#name{
+    width: 312px;
+    margin-top: 10px;
+}
+#color{
+    width: 312px;
+    margin-top: 10px;
+}
+.env{
+    height: 50px;
+    width: 50px;
+}
+#subInv{
+    margin-top: 10px;
+}
