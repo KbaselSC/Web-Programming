@@ -1,9 +1,11 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Author: Kevin Basel
+ * Javascript for the index.html that generates and invite for raid
+ * with the persons name, color they want the text, and the amount of
+ * "corruption" they have
  */
 
+//variables
 var cardCanvas = document.getElementById("cardCanvas");
 var subInv = document.getElementById("subInv");
 var formCont = document.getElementById("formCont");
@@ -15,12 +17,14 @@ var corr = document.getElementById("corruption").value;
 
 subInv.addEventListener("click", submitInv);
 
+//function that is used when the generate invite button is hit
 function submitInv(){
     formCont.style.display="none";
     cardCanvas.style.transition="3.5s";
     cardCanvas.style.opacity="1";
     invText();
 }
+//function that makes the details of the canvas appear
 function invText(){
     ctx.fillStyle=color;
     ctx.font="20px Arial";
