@@ -12,26 +12,26 @@ and open the template in the editor.
         <link rel="stylesheet" href="CSS/main.css">
     </head>
     <body>
-        <div class="formCont">
+        <div id="formCont">
             <h2>Invitation to raid!</h2>
-            <img class="env" src="Images/envelope.png">
-            <img class="env" src="Images/envelope.png">
-            <img class="env" src="Images/envelope.png">
+            <img class="env" src="Images/envelope.png" alt="envelope">
+            <img class="env" src="Images/envelope.png" alt="envelope">
+            <img class="env" src="Images/envelope.png" alt="envelope">
             <br>
-            <form class="formEdit">
+            <form>
                 <label for="name">Name: </label>
                 <br>
-                <input id="name" autofocus required placeholder="Name" name="name" type="text">
+                <input id="name" autofocus required placeholder="Name" type="text">
                 <br>
                 <br>
                 <label for="color">Text color: </label>
                 <br>
                 <input name="color" id="color" type="color">
                 <br>
-                <button id="subInv">Generate Invite</button>
             </form>
+            <button id="subInv">Generate Invite</button>
         </div>
-        <canvas id="cardCanvas" width="320" height="480" style="display: none"></canvas>
+        <canvas id="cardCanvas" width="320" height="480"></canvas>
         <script type="text/javascript" src="JS/card.js"></script>
     </body>
 </html>
