@@ -10,9 +10,6 @@ var cardCanvas = document.getElementById("cardCanvas");
 var subInv = document.getElementById("subInv");
 var formCont = document.getElementById("formCont");
 var ctx = cardCanvas.getContext("2d");
-var name = document.getElementById("name").value;
-var color = document.getElementById("color").value;
-var corr = document.getElementById("corruption").value;
 
 
 subInv.addEventListener("click", submitInv);
@@ -26,6 +23,9 @@ function submitInv(){
 }
 //function that makes the details of the canvas appear
 function invText(){
+    var name = document.getElementById("name").value;
+    var color = document.getElementById("color").value;
+    var corr = document.getElementById("corruption").value;
     ctx.fillStyle=color;
     ctx.font="20px Arial";
     invBg = new Image();
