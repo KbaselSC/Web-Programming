@@ -17,7 +17,8 @@ subInv.addEventListener("click", submitInv);
 
 function submitInv(){
     formCont.style.display="none";
-    cardCanvas.style.display="block";
+    cardCanvas.style.transition="3.5s";
+    cardCanvas.style.opacity="1";
     invText();
 }
 function invText(){
