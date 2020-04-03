@@ -13,9 +13,11 @@ and open the template in the editor.
     </head>
     <body>
     <center>
+        <img src="./Images/tim-hortons.jpg" alt="banner">
         <h1>Welcome to Tim Horton's!</h1>
         <br>
-        <form>
+        <form method="POST" action="index.php">
+            <h2> Give us some numbers... </h2>
             <label> How many Coffee(s)?</label>
             <input type="number" id="coffeeAmt" name="coffeAmt" min="1" max="4">
             <br>
@@ -26,6 +28,7 @@ and open the template in the editor.
                 <option value="sml">Small</option>
                 <option value="med">Medium</option>
                 <option value="lrg">Large</option>
+                <option value="xlrg">Extra Large</option>
             </select>
             <br>
             <br>
@@ -40,7 +43,7 @@ and open the template in the editor.
             <br>
             <br>
             
-            <input type="submit">
+            <input type="submit" value="Order Coffee">
             <br>
             <br>
             

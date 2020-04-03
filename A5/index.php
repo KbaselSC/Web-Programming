@@ -7,7 +7,8 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <link rel="stylesheet" href="./CSS/Main.css">
+        <title>Ordered Coffee</title>
     </head>
     <body>
         <?php
