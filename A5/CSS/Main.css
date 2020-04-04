@@ -13,6 +13,7 @@ body{
 }
 h1, h2{
     color: firebrick;
+    text-align: center;
 }
 form{
     border: 2px solid firebrick;
